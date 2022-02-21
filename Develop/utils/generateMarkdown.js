@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license !== 'no license'){
     return `
-    [badge](https://img.shields.io/badge/license-${license}-blue)
+    ![badge](https://img.shields.io/badge/license-${license}-blueviolet)
     `;
   } else {
     return '';
@@ -38,6 +38,16 @@ function renderLicenseSection(license) {
   }
 }
 
+function renderLicenseTableContents(license) {
+  if (license !== 'no license') {
+    return `
+    * [License](#license)
+    `
+  } else {
+    return '';
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -49,6 +59,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation-instructions)
   * [Usage](#usage-information)
+  ${renderLicenseTableContents(data.license)}
   * [Contributors](#contribution-guidelines)
   * [Test](#test-instructions)
   * [Questions](#questions)
