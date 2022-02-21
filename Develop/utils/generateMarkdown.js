@@ -40,9 +40,7 @@ function renderLicenseSection(license) {
 
 function renderLicenseTableContents(license) {
   if (license !== 'no license') {
-    return `
-    * [License](#license)
-    `
+    return `* [License](#license)`
   } else {
     return '';
   }
