@@ -1,7 +1,7 @@
 
   # generize-README
   
-    [badge](https://img.shields.io/badge/license-mit-blue)
+    ![badge](https://img.shields.io/badge/license-mit-blue)
     
 
   ## Table-of-Contents
