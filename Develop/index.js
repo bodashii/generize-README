@@ -89,6 +89,32 @@ const promptQuestions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'githubUsername',
+            message: 'What is your GitHub username? (Required)',
+            validate: githubInput => {
+                if(githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email? (Required)',
+            validate: emailInput => {
+                if(emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email!');
+                    return false;
+                }
+            }
         }
     ])
     .then(fileName => {
