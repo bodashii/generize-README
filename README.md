@@ -22,7 +22,7 @@
   In the terminal node index.js. Answer the prompts and a README.md file will appear in the Develop directory.
 
   
-  ## [License]
+  ## [License](#table-of-contents)
 
   This app is covered under the listed license:
 
