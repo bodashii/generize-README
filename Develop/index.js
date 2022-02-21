@@ -59,6 +59,12 @@ const promptQuestions = () => {
             }
         },
         {
+            type: 'list',
+            name: 'license',
+            message: 'Pick a license! (Required)',
+            choices: ['agpl', 'apache', 'mit', 'no license']
+        },
+        {
             type: 'input',
             name: 'contribution',
             message: ' Please specify the contribution guidelines of your project? (Required)',
