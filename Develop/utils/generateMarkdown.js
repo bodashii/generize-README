@@ -44,32 +44,32 @@ function generateMarkdown(data) {
   # ${data.title}
   ${renderLicenseBadge(data.license)}
 
-  ${data.description}
-
   ## Table-of-Contents
 
-  * [Description]
-  * [Installation]
-  * [Usage]
-  * [Contributors]
-  * [Test]
-  * [Questions]
+  * [Description](#description)
+  * [Installation](#installation-instructions)
+  * [Usage](#usage-information)
+  * [Contributors](#contribution-guidelines)
+  * [Test](#test-instructions)
+  * [Questions](#questions)
+  
+  ## [Description](#table-of-contents)
 
-  ## Installation Instructions 
+  ## [Installation-Instructions](#table-of-contents)
   ${data.installation}
 
-  ## Usage Information 
+  ## [Usage-Information](#table-of-contents)
   ${data.usage}
 
   ${renderLicenseSection(data.license)}
 
-  ## Contribution Guidelines 
+  ## [Contribution-Guidelines](#table-of-contents)
   ${data.contribution}
 
-  ## Test Instructions 
+  ## [Test-Instructions](#table-of-contents) 
   ${data.test}
 
-  ## Questions
+  ## [Questions](#table-of-contents)
   Reach out links:
 
   [GitHub](https://github.com/${data.githubUsername})
