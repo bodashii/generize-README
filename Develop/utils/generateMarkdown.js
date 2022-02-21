@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license !== 'no license'){
     return `
-    ![badge](https://img.shields.io/badge/license-${license}-blueviolet)
+  ![badge](https://img.shields.io/badge/license-${license}-blueviolet)
     `;
   } else {
     return '';
@@ -27,7 +27,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'no license'){
     return `
-  ## [License]
+  ## [License](#table-of-contents)
 
   This app is covered under the listed license:
 
@@ -63,6 +63,7 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## [Description](#table-of-contents)
+  ${data.description}
 
   ## [Installation-Instructions](#table-of-contents)
   ${data.installation}

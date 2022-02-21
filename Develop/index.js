@@ -81,8 +81,8 @@ const promptQuestions = () => {
             type: 'input',
             name: 'test',
             message: 'What are your test instructions for the project. (Required)',
-            validate: descriptionInput => {
-                if(descriptionInput) {
+            validate: testInput => {
+                if(testInput) {
                     return true;
                 } else {
                     console.log('Please enter test instructions for the project.');
