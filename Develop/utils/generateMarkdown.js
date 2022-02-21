@@ -53,6 +53,7 @@ function generateMarkdown(data) {
   * [Usage]
   * [Contributors]
   * [Test]
+  * [Questions]
 
   ## Installation Instructions 
   ${data.installation}
@@ -68,6 +69,11 @@ function generateMarkdown(data) {
   ## Test Instructions 
   ${data.test}
 
+  ## Questions
+  Reach out links:
+
+  [GitHub](https://github.com/${data.githubUsername})
+  [Email: ${data.email}](mailto:${data.email})
 
 `;
 }
